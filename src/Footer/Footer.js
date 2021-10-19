@@ -9,7 +9,7 @@ const Footer = () => {
 
 
 
-            <CardGroup className="bg-primary mb-5">
+            <CardGroup className="bg-primary w-100">
                 <Card.Body>
                     <h3>Our Services</h3>
                     <ul>
