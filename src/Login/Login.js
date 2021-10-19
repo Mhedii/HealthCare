@@ -95,11 +95,11 @@ const Login = () => {
             <div className="mt-5">
                 <h2>Login</h2>
                 <form onSubmit="">
-                    <input type="email" name="" id="" placeholder="Your Email">
+                    <input type="email" name="" id="email" placeholder="Your Email">
                     </input>
                     <br />
 
-                    <input type="password" naem="" id="" placeholder="Your Password"></input>
+                    <input type="password" name="" id="password" placeholder="Your Password"></input>
                     <br />
                     <input type="submit" Value="Submit" className="m-2"></input>
                 </form>

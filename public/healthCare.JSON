@@ -3,36 +3,42 @@
         "key": "1",
         "name": "Medical Oncology",
         "sdesc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/iStock-1181263174edit-1024x575.jpg?w=1155&h=1528"
     },
     {
         "key": "2",
         "name": "Radiation Oncology",
         "sdesc": "Our team of regional leaders in the field choose state-of-the-art radiation technologies and treatments to precision-target cancer cells.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://www.pacificneuroscienceinstitute.org/brain-tumor/wp-content/uploads/sites/2/2020/03/20191017_PNI_566_Edge-scaled.jpg"
     },
     {
         "key": "3",
         "name": "Infusion",
         "sdesc": "For patients suffering from chronic conditions like Rheumatoid Arthritis, Multiple Sclerosis, Asthma, and others, we provide Astera Infusion Therapy in a comfortable and welcoming environment.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://www.raumedic.com/fileadmin/user_upload/Application_Areas/Infusion/raumedic_infusion_nurse.jpg"
     },
     {
         "key": "4",
         "name": "Breast Surgery",
         "sdesc": "Our experienced and highly respected breast surgeons choose procedures based on the diagnosis, staging, health, and unique needs of each individual patient to ensure the best possible outcomes.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://www.mskcc.org/sites/default/files/styles/large/public/node/4562/3x2/msk_2522_3x2_0.jpg"
     },
     {
         "key": "5",
         "name": "Hematology",
         "sdesc": "Our expert hematologists diagnose, treat and manage your blood disorder with advanced care customized for your individual needs.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/01/GettyImages-1183390789_hero-1024x575.jpg?w=1155&h=1528"
     },
     {
         "key": "6",
         "name": "Eye Care",
         "sdesc": "Our experienced and highly respected breast surgeons choose procedures based on the diagnosis, staging, health, and unique needs of each individual patient to ensure the best possible outcomes.",
+        "desc": "Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.Our supportive doctors work one-on-one with you to develop your treatment plan, answer all your questions, and coordinate your care.",
         "img": "https://brightoneye.net/wp-content/uploads/2018/04/eyecheck-1-300x200.jpg"
     }
 ]

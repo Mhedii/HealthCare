@@ -2,10 +2,10 @@ import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 
-const ServiceList = (props) => {
+const MoreServiceList = (props) => {
 
     const MoreServe = props.moreserve || [];
-    const { name, sdesc, img } = MoreServe;
+    const { name, sdesc, desc, img } = MoreServe;
 
 
 
@@ -22,9 +22,10 @@ const ServiceList = (props) => {
                             <Card.Text>
                                 <h5>{name}</h5>
                                 <h5>{sdesc}</h5>
+                                <h5>{desc}</h5>
 
                             </Card.Text>
-                            <Button variant="primary" href="/service">Learn More</Button>
+                            {/* <Button variant="primary" href="/service">Learn More</Button> */}
                         </Card.Body>
                     </Card>
                 </div>
@@ -36,4 +37,4 @@ const ServiceList = (props) => {
     );
 };
 
-export default ServiceList;
+export default MoreServiceList;

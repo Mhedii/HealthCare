@@ -15,6 +15,9 @@ import ContactUs from './ContactUS/ContactUs';
 import NotFound from './NotFound/NotFound';
 import Home from './Home/Home';
 import Register from './Register/Register';
+import About from './AboutUs/AboutUs';
+import ServiceList from './ServiceList/ServiceList';
+import MoreServices from './Services/MoreServices';
 
 
 function App() {
@@ -28,19 +31,22 @@ function App() {
 
           <Route path="/home">
             <Home></Home>
+            {/* <ServiceList></ServiceList> */}
+            <Services></Services>
             <More></More>
 
 
           </Route>
-          {/* <Route path="/about">
+          <Route path="/about">
             <About></About>
-          </Route> */}
+          </Route>
           <Route path="/contact">
             <ContactUs></ContactUs>
 
           </Route>
           <Route path="/service">
-            <Services></Services>
+
+            <MoreServices></MoreServices>
           </Route>
           <Route path="/login">
             <Login></Login>
