@@ -65,7 +65,7 @@ function App() {
               <Services></Services>
               <More></More>
             </Route>
-            <Route exact path="*">
+            <Route path="*">
               <NotFound></NotFound>
             </Route>
 

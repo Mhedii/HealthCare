@@ -1,6 +1,7 @@
 
+import userEvent from '@testing-library/user-event';
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import useFirebase from '../hooks/useFirebase';
 import "./loginform.css";
@@ -10,11 +11,15 @@ import "./loginform.css";
 const Login = () => {
     const { handleGoogleSignIn, handleGithubSignIn } = useAuth();
     const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/service';
+
 
     console.log('came from', location.state?.from);
 
     const handleRegistration = e => {
         e.preventDefault();
+        history.push(redirect_uri);
     }
     return (
         <div className="loginform m-5">
