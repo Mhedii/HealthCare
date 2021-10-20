@@ -17,7 +17,7 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const { user, registerUser } = useAuth();
-    const handleEmailSignIn = e => {
+    const handleEmailSignUp = e => {
         e.preventDefault();
         console.log(email, password)
         registerUser(email, password)
@@ -45,7 +45,7 @@ const Register = () => {
         <div className="loginform m-5">
             <div className="mt-5">
                 <h2>Create Account</h2>
-                <form onSubmit={handleEmailSignIn} >
+                <form onSubmit={handleEmailSignUp} >
                     <input type="email" onChange={handleEmail} name="" id="email" placeholder="Your Email" required>
                     </input>
                     <br />
