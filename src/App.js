@@ -18,60 +18,64 @@ import Register from './Register/Register';
 import About from './AboutUs/AboutUs';
 // import ServiceList from './ServiceList/ServiceList';
 import MoreServices from './Services/MoreServices';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AuthProvider from './Context/AuthProvider';
 
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
+        <Router>
 
-      <Router>
+          <Header></Header>
+          <Switch>
 
-        <Header></Header>
-        <Switch>
+            <Route path="/home">
+              <Home></Home>
 
-          <Route path="/home">
-            <Home></Home>
-
-            <Services></Services>
-            <More></More>
-
-
-          </Route>
+              <Services></Services>
+              <More></More>
 
 
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/contact">
-            <ContactUs></ContactUs>
-
-          </Route>
-          <Route path="/service">
-
-            <MoreServices></MoreServices>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-
-          <Route exact path="*">
-            <NotFound></NotFound>
-          </Route>
+            </Route>
 
 
-        </Switch>
-        {/* <Home></Home>
-        <More></More> */}
-        <Footer></Footer>
-      </Router>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/contact">
+              <ContactUs></ContactUs>
 
-      {/* <Header></Header>
+            </Route>
+            <PrivateRoute path="/service">
 
-      <Login></Login>
-      <Footer></Footer> */}
+              <MoreServices></MoreServices>
+            </PrivateRoute>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+
+            <Route exact path="/">
+              <Home></Home>
+
+              <Services></Services>
+              <More></More>
+            </Route>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
+
+
+          </Switch>
+
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
+
 
     </div>
   );

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import useAuth from '../hooks/useAuth';
 import useFirebase from '../hooks/useFirebase';
 
 
 const Header = () => {
-    const { user, handleSignOut } = useFirebase();
+    // const { user, handleSignOut } = useFirebase();
+    const { user, handleSignOut } = useAuth();
     console.log(user)
 
     return (
@@ -32,7 +34,7 @@ const Header = () => {
                             <Nav>
                                 {
                                     user.displayName ?
-                                        <div><h5 className="text-warning">{user.displayName}|| Sign Out</h5><button onClick={handleSignOut}>Sign Out</button> </div> :
+                                        <div><span className="text-warning">{user.displayName}</span><button onClick={handleSignOut}>Sign Out</button> </div> :
                                         <Nav.Link href="/login">Log In</Nav.Link>
                                 }
                                 {/* <Nav.Link href="/register">

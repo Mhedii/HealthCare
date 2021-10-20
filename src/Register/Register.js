@@ -61,7 +61,7 @@ const Register = () => {
             <div className="mt-5">
                 <h2>Create Account</h2>
                 <form onSubmit={handleEmailSignIn} >
-                    <input type="email" onBlur={handleEmail} name="" id="mail" placeholder="Your Email" required>
+                    <input type="email" onBlur={handleEmail} name="" id="email" placeholder="Your Email" required>
                     </input>
                     <br />
 

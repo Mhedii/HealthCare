@@ -25,6 +25,7 @@ const ServiceList = (props) => {
 
                             </Card.Text>
                             <Button variant="primary" href="/service">Learn More</Button>
+                            {props.children}
                         </Card.Body>
                     </Card>
                 </div>
