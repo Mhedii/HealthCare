@@ -33,7 +33,7 @@ const Header = () => {
                             </nav> */}
                             <Nav>
                                 {
-                                    user.email ?
+                                    user.displayName ?
                                         <div><span className="text-warning">{user.displayName}</span><button onClick={handleSignOut}>Sign Out</button> </div> :
                                         <Nav.Link href="/login">Log In</Nav.Link>
                                 }

@@ -1,15 +1,15 @@
 
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
-import useFirebase from '../hooks/useFirebase';
+// import useFirebase from '../hooks/useFirebase';
 import "./loginform.css";
 
 
 
 const Login = () => {
-    const { handleGoogleSignIn, handleGithubSignIn } = useAuth();
+    const { handleGoogleSignIn } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/service';

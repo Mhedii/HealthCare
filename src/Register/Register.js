@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// import { getAuth } from "firebase/auth";
 import initializeAuthentication from '../Firebase/firebase.initialize';
 
 
-import useFirebase from '../hooks/useFirebase';
+// import useFirebase from '../hooks/useFirebase';
 import useAuth from '../hooks/useAuth';
 initializeAuthentication();
 
@@ -13,11 +13,11 @@ initializeAuthentication();
 const Register = () => {
 
 
-    const auth = getAuth();
+    // const auth = getAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { user, registerUser } = useAuth();
-    const handleEmailSignUp = e => {
+    const { registerUser } = useAuth();
+    const handleEmailSignIn = e => {
         e.preventDefault();
         console.log(email, password)
         registerUser(email, password)
@@ -45,7 +45,7 @@ const Register = () => {
         <div className="loginform m-5">
             <div className="mt-5">
                 <h2>Create Account</h2>
-                <form onSubmit={handleEmailSignUp} >
+                <form onSubmit={handleEmailSignIn} >
                     <input type="email" onChange={handleEmail} name="" id="email" placeholder="Your Email" required>
                     </input>
                     <br />

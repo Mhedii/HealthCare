@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, GithubAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.initialize";
 
-import Login from '../Login/Login';
+// import Login from '../Login/Login';
 const googleProvider = new GoogleAuthProvider();
-const githubProvider = new GithubAuthProvider();
+// const githubProvider = new GithubAuthProvider();
 
 initializeAuthentication();
 
