@@ -88,13 +88,19 @@ import { Link } from 'react-router-dom';
 import useFirebase from '../hooks/useFirebase';
 import "./loginform.css";
 
+
+
 const Login = () => {
-    const { user, handleGoogleSignIn } = useFirebase();
+    const { user, handleGoogleSignIn, handleGithubSignIn } = useFirebase();
+
+    const handleRegistration = e => {
+        e.preventDefault();
+    }
     return (
         <div className="loginform m-5">
             <div className="mt-5">
                 <h2>Login</h2>
-                <form onSubmit="">
+                <form onSubmit={handleRegistration}>
                     <input type="email" name="" id="email" placeholder="Your Email">
                     </input>
                     <br />
@@ -106,7 +112,7 @@ const Login = () => {
                 <p>new to AsthaCare?<Link to="/register">Create Account</Link> </p>
                 <div>--------------or-------------</div>
                 <button className="btn-regular me-1" onClick={handleGoogleSignIn}>Google Sign In</button>
-                <button className="btn-regular ms-1">Github Sign In</button>
+                <button className="btn-regular ms-1" onClick={handleGithubSignIn}>Github Sign In</button>
             </div>
 
         </div>

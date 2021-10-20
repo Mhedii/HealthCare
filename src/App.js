@@ -16,7 +16,7 @@ import NotFound from './NotFound/NotFound';
 import Home from './Home/Home';
 import Register from './Register/Register';
 import About from './AboutUs/AboutUs';
-import ServiceList from './ServiceList/ServiceList';
+// import ServiceList from './ServiceList/ServiceList';
 import MoreServices from './Services/MoreServices';
 
 
@@ -31,12 +31,14 @@ function App() {
 
           <Route path="/home">
             <Home></Home>
-            {/* <ServiceList></ServiceList> */}
+
             <Services></Services>
             <More></More>
 
 
           </Route>
+
+
           <Route path="/about">
             <About></About>
           </Route>

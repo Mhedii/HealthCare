@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavLink, } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import useFirebase from '../hooks/useFirebase';
-import Login from '../Login/Login';
+
 
 const Header = () => {
     const { user, handleSignOut } = useFirebase();
@@ -32,8 +32,8 @@ const Header = () => {
                             <Nav>
                                 {
                                     user.displayName ?
-                                        <button onClick={handleSignOut}>{user.displayName}</button> :
-                                        <Nav.Link href="/login">LogIn</Nav.Link>
+                                        <div><h5 className="text-warning">{user.displayName}|| Sign Out</h5><button onClick={handleSignOut}>Sign Out</button> </div> :
+                                        <Nav.Link href="/login">Log In</Nav.Link>
                                 }
                                 {/* <Nav.Link href="/register">
                                     Sign Up

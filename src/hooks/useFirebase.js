@@ -10,6 +10,9 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const auth = getAuth();
 
+
+
+
     const handleGoogleSignIn = () => {
 
         signInWithPopup(auth, googleProvider)
@@ -46,10 +49,11 @@ const useFirebase = () => {
             })
 
     }
+
     const handleSignOut = () => {
         signOut(auth)
             .then(() => {
-                setUser();
+                setUser({});
             })
     }
     useEffect(() => {
